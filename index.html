@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBQ</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+
+</head>
+<body class="font-sans">
+  <!-- Header -->
+  <header class="bg-yellow-100 p-4 flex justify-between items-center">
+    <div class="flex items-center">
+      <img src="assets/bbq.png" alt="BBQ's Logo" class="mr-2 w-16 h-16">
+      <span class="text-xl font-bold">BBQ</span>
+   </div>
+    <nav class="space-x-4">
+      <a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
+      <a href="#" class="text-gray-700 hover:text-gray-900">About</a>
+      <a href="#" class="text-gray-700 hover:text-gray-900">Contact</a>
+      <a href="#" class="text-gray-700 hover:text-gray-900">Locations</a>
+    </nav>
+    <button class="bg-[#E6A33B] text-black font-bold px-6 py-2 rounded-md shadow-[4px_4px_0px_#3b2f00] 
+        hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all duration-200">
+        ORDER NOW
+    </button>
+
+
+  </header>
+
+  <section class="relative w-full h-96 overflow-hidden">
+   <div class="slider w-full h-[500px] flex overflow-hidden">
+  <div class="slide w-full h-full flex-shrink-0">
+    <img src="assets/offer1.jpg" alt="Slide 1" class="w-full h-full object-cover">
+  </div>
+  <div class="slide w-full h-full flex-shrink-0">
+    <img src="assets/offer2.jpg" alt="Slide 2" class="w-full h-full object-cover">
+  </div>
+  <div class="slide w-full h-full flex-shrink-0">
+    <img src="assets/offer3.jpg" alt="Slide 3" class="w-full h-full object-cover">
+  </div>
+</div>
+
+
+
+
+        <!-- Navigation Dots -->
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            <button class="dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 focus:opacity-100" data-slide="0"></button>
+            <button class="dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 focus:opacity-100" data-slide="1"></button>
+            <button class="dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 focus:opacity-100" data-slide="2"></button>
+        </div>
+  </section>
+    <!-- Offer Section -->
+  <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Exclusive Offers</h2>
+            <div class="grid grid-cols-5 gap-6 overflow-x-auto">
+                <!-- Offer Box 1 -->
+                <div class="rounded-lg shadow-md p-2 flex items-center hover:shadow-lg transition-shadow min-w-[200px]" style="background-color: #920034;">
+                    <img src="assets/percent.png" alt="Percentage" class="w-12 h-12 mr-4 object-cover">
+                    <div class="text-center">
+                        <h3 class="text-[1.4rem] font-semibold mb-2 text-white">Adventure Package</h3>
+                        <p class="text-[1.2rem] text-gray-200">Get 20% off on all adventure tours this season.</p>
+                    </div>
+                </div>
+                <!-- Offer Box 2 -->
+                <div class="rounded-lg shadow-md p-2 flex items-center hover:shadow-lg transition-shadow min-w-[200px]" style="background-color: #ffb600;">
+                    <img src="assets/percent.png" alt="Percentage" class="w-12 h-12 mr-4 object-cover">
+                    <div class="text-center">
+                        <h3 class="text-[1.4rem] font-semibold mb-2 text-gray-800">City Escape</h3>
+                        <p class="text-[1.2rem] text-gray-700">Enjoy a 15% discount on urban hotel stays.</p>
+                    </div>
+                </div>
+                <!-- Offer Box 3 -->
+                <div class="rounded-lg shadow-md p-2 flex items-center hover:shadow-lg transition-shadow min-w-[200px]" style="background-color: #920034;">
+                    <img src="assets/percent.png" alt="Percentage" class="w-12 h-12 mr-4 object-cover">
+                    <div class="text-center">
+                        <h3 class="text-[1.4rem] font-semibold mb-2 text-white">Beach Retreat</h3>
+                        <p class="text-[1.2rem] text-gray-200">Save 25% on beach resort bookings.</p>
+                    </div>
+                </div>
+                <!-- Offer Box 4 -->
+                <div class="rounded-lg shadow-md p-2 flex items-center hover:shadow-lg transition-shadow min-w-[200px]" style="background-color: #ffb600;">
+                    <img src="assets/percent.png" alt="Percentage" class="w-12 h-12 mr-4 object-cover">
+                    <div class="text-center">
+                        <h3 class="text-[1.4rem] font-semibold mb-2">Mountain Getaway</h3>
+                        <p class="text-[1.2rem] text-gray-600">10% off on cozy mountain cabin rentals.</p>
+                    </div>
+                </div>
+                <!-- Offer Box 5 -->
+                <div class="rounded-lg shadow-md p-2 flex items-center hover:shadow-lg transition-shadow min-w-[200px]" style="background-color: #920034;">
+                    <img src="assets/percent.png" alt="Percentage" class="w-12 h-12 mr-4 object-cover">
+                    <div class="text-center">
+                        <h3 class="text-[1.4rem] font-semibold mb-2 text-white">Cultural Tour</h3>
+                        <p class="text-[1.2rem] text-gray-200">15% off on guided cultural city tours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
+
+  <!-- Category Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold">Categories</h2>
+                <div class="flex space-x-4">
+                    <button class="category-btn bg-transparent border-2 border-blue-500 text-blue-500 px-4 py-2 hover:bg-blue-500 hover:text-white transition" data-category="all" style="border-radius: 12px 0 0 12px;">All</button>
+                    <button class="category-btn bg-transparent border-2 border-blue-500 text-blue-500 px-4 py-2 hover:bg-blue-500 hover:text-white transition" data-category="veg" style="border-radius: 12px 0 0 12px;">Veg</button>
+                    <button class="category-btn bg-transparent border-2 border-blue-500 text-blue-500 px-4 py-2 hover:bg-blue-500 hover:text-white transition" data-category="non-veg" style="border-radius: 12px 0 0 12px;">Non-Veg</button>
+                    <button class="category-btn bg-transparent border-2 border-blue-500 text-blue-500 px-4 py-2 hover:bg-blue-500 hover:text-white transition" data-category="best-seller" style="border-radius: 12px 0 0 12px;">Best Seller</button>
+                </div>
+            </div>
+            <div class="relative">
+                <button id="scroll-left" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <div id="category-grid" class="grid grid-flow-col auto-cols-[minmax(150px,1fr)] gap-6 overflow-x-auto scroll-smooth">
+                    <!-- Category Item 1 -->
+                    <div class="category-item veg text-center" data-category="veg">
+                        <img src="assets/cat1.png" alt="Veg Salad" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium">Veg Salad</p>
+                    </div>
+                    <!-- Category Item 2 -->
+                    <div class="category-item veg text-center" data-category="veg">
+                        <img src="assets/cat2.jpeg" alt="Veg Curry" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium">Veg Curry</p>
+                    </div>
+                    <!-- Category Item 3 -->
+                    <div class="category-item veg text-center" data-category="veg">
+                        <img src="assets/cat3.jpg" alt="Veg Pasta" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium">Veg Pasta</p>
+                    </div>
+                    <!-- Category Item 4 -->
+                    <div class="category-item non-veg text-center" data-category="non-veg">
+                        <img src="assets/cat4.jpg" alt="Chicken Grill" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium">Chicken Grill</p>
+                    </div>
+                    <!-- Category Item 5 -->
+                    <div class="category-item non-veg text-center" data-category="non-veg">
+                        <img src="assets/cat5.png" alt="Fish Fry" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium">Fish Fry</p>
+                    </div>
+                    <!-- Category Item 6 -->
+                    <div class="category-item non-veg text-center" data-category="non-veg">
+                        <img src="assets/cat6.jpg" alt="Beef Steak" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium">Beef Steak</p>
+                    </div>
+                    <!-- Category Item 7 -->
+                    <div class="category-item best-seller text-center" data-category="best-seller">
+                        <img src="assets/cat7.jpg" alt="Pizza" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium">Pizza</p>
+                    </div>
+                    <!-- Category Item 8 -->
+                    <div class="category-item best-seller text-center" data-category="best-seller">
+                        <img src="assets/cat8.jpg" alt="Burger" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium">Burger</p>
+                    </div>
+                </div>
+                <button id="scroll-right" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- Today's Deals -->
+  <section class="p-4">
+    <h3 class="text-xl font-bold mb-2">Today's Deals starting at ₹249</h3>
+    <div class="grid grid-cols-3 gap-4">
+      <div class="text-center border p-4">
+        <img src="assets/food4.jpg" alt="Paneer Tikka Roll" class="mx-auto">
+        <p class="text-red-600">Paneer Tikka Roll</p>
+        <p>Juicy paneer tikka wrapped in soft flaky paratha with crunchy lachha pyaza and tangy chutney.</p>
+        <p>₹909 People order in last week</p>
+        <p class="text-red-600">₹249 <span class="line-through">₹299</span> Save ₹50</p>
+        <button class="bg-[#E6A33B] text-black font-bold px-6 py-2 rounded-md shadow-[4px_4px_0px_#3b2f00] 
+        hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all duration-200">
+        ORDER NOW
+    </button>
+      </div>
+      <div class="text-center border p-4">
+        <img src="assets/food4.jpg" alt="Chicken Tikka Roll" class="mx-auto">
+        <p class="text-red-600">Chicken Tikka Roll</p>
+        <p>Succulent chicken tikka wrapped in a flaky paratha with lachha pyaza and flavourful chutney.</p>
+        <p>₹539 People order in last week</p>
+        <p class="text-red-600">₹249 <span class="line-through">₹299</span> Save ₹50</p>
+        <button class="bg-[#E6A33B] text-black font-bold px-6 py-2 rounded-md shadow-[4px_4px_0px_#3b2f00] 
+        hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all duration-200">
+        ORDER NOW
+    </button>
+      </div>
+      <div class="text-center border p-4">
+        <img src="assets/food4.jpg" alt="Chicken Seekh Roll" class="mx-auto">
+        <p class="text-red-600">Chicken Seekh Roll</p>
+        <p>Tender & flavourful chicken seekh kebab, wrapped in a flaky paratha with lachha pyaza and mouthwatering.</p>
+        <p>₹744 People order in last week</p>
+        <p class="text-red-600">₹249 <span class="line-through">₹299</span> Save ₹50</p>
+        <button class="bg-[#E6A33B] text-black font-bold px-6 py-2 rounded-md shadow-[4px_4px_0px_#3b2f00] 
+        hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all duration-200">
+        ORDER NOW
+    </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Our Special Section -->
+    <section class="py-12 bg-cover bg-center" style="background-image: url('assets/SPECIALBG.png');">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-black mb-4">Our Special</h2>
+            <p class="text-lg text-center text-black mb-8">Discover our chef's handpicked signature dishes, crafted with love and the finest ingredients.</p>
+            <div class="relative">
+                <button id="special-scroll-left" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <div id="special-grid" class="grid grid-flow-col auto-cols-[minmax(150px,1fr)] gap-6 overflow-x-auto scroll-smooth">
+                    <!-- Special Item 1 -->
+                    <div class="special-item text-center">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Margherita Pizza" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium text-black">Margherita Pizza</p>
+                    </div>
+                    <!-- Special Item 2 -->
+                    <div class="special-item text-center">
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3" alt="Pepperoni Pizza" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium text-black">Pepperoni Pizza</p>
+                    </div>
+                    <!-- Special Item 3 -->
+                    <div class="special-item text-center">
+                        <img src="https://images.unsplash.com/photo-1514326640560-7d063ef2aed5" alt="Grilled Salmon" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium text-black">Grilled Salmon</p>
+                    </div>
+                    <!-- Special Item 4 -->
+                    <div class="special-item text-center">
+                        <img src="assets/SPE1.jpg" alt="Pasta Alfredo" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium text-black">Pasta Alfredo</p>
+                    </div>
+                    <!-- Special Item 5 -->
+                    <div class="special-item text-center">
+                        <img src="assets/SPE2.jpg" alt="Sushi Platter" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium text-black">Sushi Platter</p>
+                    </div>
+                    <!-- Special Item 6 -->
+                    <div class="special-item text-center">
+                        <img src="assets/SPE3.jpg" alt="Tacos" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium text-black">Tacos</p>
+                    </div>
+                    <!-- Special Item 7 -->
+                    <div class="special-item text-center">
+                        <img src="https://images.unsplash.com/photo-1555126634-323283e090fa" alt="BBQ Ribs" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium text-black">BBQ Ribs</p>
+                    </div>
+                    <!-- Special Item 8 -->
+                    <div class="special-item text-center">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Veggie Burger" class="w-32 h-32 mx-auto rounded-full object-cover">
+                        <p class="mt-2 text-lg font-medium text-black">Veggie Burger</p>
+                    </div>
+                </div>
+                <button id="special-scroll-right" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+   <!-- CUSTOMER FAVORITES -->
+<section class="py-12 text-center">
+  <h2 class="text-3xl md:text-4xl mb-8 font-bold">OUR CUSTOMER FAVORITES</h2>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+    
+    <div class="bg-white rounded-lg shadow p-4">
+      <img src="assets/food1.jpg" alt="Wings Biryani" 
+           class="w-full h-48 object-cover rounded-md mx-auto mb-4">
+      <h3 class="font-bold">WINGS BIRYANI</h3>
+      <p class="text-sm">Crispy chicken wings atop spicy dum rice.</p>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow p-4">
+      <img src="assets/food2.webp" alt="Ulavacharu Biryani" 
+           class="w-full h-48 object-cover rounded-md mx-auto mb-4">
+      <h3 class="font-bold">ULAVACHARU BIRYANI</h3>
+      <p class="text-sm">Rich horse gram gravy meets layered biryani.</p>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow p-4">
+      <img src="assets/food3.jpg" alt="Bheemavaram Pulav" 
+           class="w-full h-48 object-cover rounded-md mx-auto mb-4">
+      <h3 class="font-bold">Bheemavaram Pulav</h3>
+      <p class="text-sm">Spicy, crumbly rice with a rustic coastal kick.</p>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow p-4">
+      <img src="assets/food4.jpg" alt="Fry Piece Biryani" 
+           class="w-full h-48 object-cover rounded-md mx-auto mb-4">
+      <h3 class="font-bold">Fry Piece Biryani</h3>
+      <p class="text-sm">Classic biryani topped with crispy fried chicken.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- DINING -->
+  <section class="py-12 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6">
+    <div class="md:w-1/2">
+      <img src="assets/food1.jpg" alt="Dining" class="rounded-lg shadow">
+    </div>
+    <div class="md:w-1/2">
+      <p class="text-sm font-bold text-gray-500">#BIRYANISANDMORE</p>
+      <h2 class="text-4xl font-bold mb-4">DINING, DELIVERED, DEVOURED</h2>
+      <p class="mb-6">Whether you're dining in our beautifully designed restaurants or ordering from your sofa, our commitment to quality never wavers. We're serving joy in every box and excellence in every bite.</p>
+      <button class="btn-custom">Learn More</button>
+    </div>
+  </section>
+
+ <!-- SCROLL THROUGH FLAVOR -->
+<section class="py-12 bg-[#FFF8F2] text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-8">SCROLL THROUGH FLAVOR</h2>
+  <p class="max-w-2xl mx-auto mb-10 text-gray-600">
+    A visual treat of our finest biryanis and specialties—crafted for unforgettable taste experiences.
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="assets/food1.jpg" class="w-full h-64 object-cover transform transition duration-300 hover:scale-105 hover:shadow-xl" alt="">
+    </div>
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="assets/SPE1.jpg" class="w-full h-64 object-cover transform transition duration-300 hover:scale-105 hover:shadow-xl" alt="">
+    </div>
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="assets/food2.webp" class="w-full h-64 object-cover transform transition duration-300 hover:scale-105 hover:shadow-xl" alt="">
+    </div>
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="assets/food3.jpg" class="w-full h-64 object-cover transform transition duration-300 hover:scale-105 hover:shadow-xl" alt="">
+    </div>
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="assets/food4.jpg" class="w-full h-64 object-cover transform transition duration-300 hover:scale-105 hover:shadow-xl" alt="">
+    </div>
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="assets/cat5.png" class="w-full h-64 object-cover transform transition duration-300 hover:scale-105 hover:shadow-xl" alt="">
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-[#6A0015] text-white py-10 mt-12">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 px-6">
+      <div>
+        <img src="assets/bbq.png" alt="BBK Logo" class="mb-4 w-32">
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Useful Links</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#">About BBK</a></li>
+          <li><a href="#">Loyalty Program</a></li>
+          <li><a href="#">Bulk Order</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Un-subscribe</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">More Info</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Contact Us</h4>
+        <p class="text-sm">Call <strong>1800-212-2-212</strong></p>
+        <div class="flex gap-3 mt-3">
+          <img src="assets/playstore.png" alt="Google Play" class="w-32">
+          <img src="assets/appstore.png" alt="App Store" class="w-32">
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-600 mt-6 pt-4 text-center text-xs">
+      <p>© 2025 BBQ. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+    <script>
+        // Hero Slider Script
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.transform = `translateX(-${index * 100}%)`;
+                dots[i].classList.toggle('opacity-100', i === index);
+                dots[i].classList.toggle('opacity-50', i !== index);
+            });
+            currentSlide = index;
+        }
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                showSlide(parseInt(dot.dataset.slide));
+            });
+        });
+
+        // Auto-slide every 5 seconds
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 5000);
+
+        // Initialize first slide
+        showSlide(0);
+
+        // Category Filter Script
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const categoryItems = document.querySelectorAll('.category-item');
+
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.dataset.category;
+                categoryItems.forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                // Update active button styling
+                categoryButtons.forEach(btn => {
+                    btn.classList.remove('bg-blue-500', 'text-white');
+                    btn.classList.add('bg-transparent', 'text-blue-500', 'border-2', 'border-blue-500');
+                });
+                button.classList.remove('bg-transparent', 'text-blue-500', 'border-2', 'border-blue-500');
+                button.classList.add('bg-blue-500', 'text-white');
+            });
+        });
+
+        // Initialize "All" button as active
+        document.querySelector('[data-category="all"]').classList.remove('bg-transparent', 'text-blue-500', 'border-2', 'border-blue-500');
+        document.querySelector('[data-category="all"]').classList.add('bg-blue-500', 'text-white');
+
+        // Category Scroll Script
+        const categoryGrid = document.getElementById('category-grid');
+        const scrollLeftBtn = document.getElementById('scroll-left');
+        const scrollRightBtn = document.getElementById('scroll-right');
+
+        scrollLeftBtn.addEventListener('click', () => {
+            categoryGrid.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+
+        scrollRightBtn.addEventListener('click', () => {
+            categoryGrid.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+
+        // Special Section Scroll Script
+        const specialGrid = document.getElementById('special-grid');
+        const specialScrollLeftBtn = document.getElementById('special-scroll-left');
+        const specialScrollRightBtn = document.getElementById('special-scroll-right');
+
+        specialScrollLeftBtn.addEventListener('click', () => {
+            specialGrid.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+
+        specialScrollRightBtn.addEventListener('click', () => {
+            specialGrid.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+    </script>
+
+    <style>
+        .slider {
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            transition: transform 0.5s ease-in-out;
+        }
+        #category-grid, #special-grid {
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE and Edge */
+        }
+        #category-grid::-webkit-scrollbar, #special-grid::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+    </style>
+</body>
+</html>
